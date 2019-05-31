@@ -2,6 +2,19 @@
 
 This library can be used to retrieve data from Lobste.rs.
 
+# Example
+
+```python
+import lobsters
+
+c = lobsters.Client()
+
+for story in c.frontpage():
+    print(story.title)
+```
+
+More examples can be found in [examples/](examples/).
+
 # Tests
 
 The tests can be ran by going to the root of the repository and running the

@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name = "lobsters",
-    version = "0.2.0",
+    version = "0.2.1",
     packages = find_packages(),
     install_requires = ['requests>=2.0', 'testsimple>=0.1'],
     url = "https://github.com/gkbrk/lobsters-py",

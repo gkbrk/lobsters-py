@@ -47,12 +47,17 @@ class Story:
     def from_dict(data):
         story = Story()
 
-        story.created_at = data.get('created_at', '')
-        story.short_id = data.get('short_id', '')
-        story.title = data.get('title', '')
-        story.url = data.get('url', '')
+        story.comment_count = data.get('comment_count')
+        story.created_at = data.get('created_at')
+        story.downvotes = data.get('downvotes')
+        story.score = data.get('score')
+        story.short_id = data.get('short_id')
+        story.short_id_url = data.get('short_id_url')
+        story.title = data.get('title')
+        story.upvotes = data.get('upvotes')
+        story.url = data.get('url')
         story.user = User.from_dict(data.get('submitter_user', {}))
-        story.description = data.get('description', '')
+        story.description = data.get('description')
 
         return story
 
